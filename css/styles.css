@@ -40,6 +40,12 @@ footer {
 	background-color: #901cad;
 }
 
+.tab-content {
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 10px;
+}
+
 /* ----------------- */
 /* 	Local Classes	 */
 /* ----------------- */
@@ -48,4 +54,26 @@ footer {
 	padding: 50px 0;
 	border-bottom: 1px ridge;
 	min-height: 200px;
+}
+
+/* --------------- */
+/* Utility Classes */
+/* --------------- */
+
+.myCoolestColerEver {
+	background-color: rgba(57, 57, 180, 0.589);
+}
+
+.centerChildContent {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.smallRow {
+	padding: 200px;
+}
+
+.largeRow {
+	padding: 500px;
 }

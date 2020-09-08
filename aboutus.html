@@ -6,28 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="node_modules/bootstrap-social/bootstrap-social.css"
-		/>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 		<!-- Additional CSS  -->
-		<link
-			rel="stylesheet"
-			href="node_modules/font-awesome/css/font-awesome.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="node_modules/bootstrap-social/bootstrap-social.css"
-		/>
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 		<!-- Google Fonts -->
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
-		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 		<!-- Custom Stylesheets -->
 		<link rel="stylesheet" href="css/styles.css" />
 
@@ -35,13 +20,16 @@
 	</head>
 
 	<body>
+		<!-- ------------------- -->
+		<!-- MAIN HEADER SECTION -->
+		<!-- ------------------- -->
+
+		<!-- JUMBOTRON -->
 		<header class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<div class="row">
 					<div class="col-4 col-sm-3 col-md-2">
-						<a href="index.html"
-							><img src="img/logo.png" alt="logo" class="img-fluid"
-						/></a>
+						<a href="index.html"><img src="img/logo.png" alt="logo" class="img-fluid" /></a>
 					</div>
 					<div class="col">
 						<h1>NuCamp</h1>
@@ -51,104 +39,98 @@
 			</div>
 		</header>
 
+		<!-- NAVIGATION -->
 		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
 			<div class="container">
-				<a href="index.html" class="navbar-brand"
-					><img src="img/logo.png" height="30px" width="30px" alt="logo"
-				/></a>
-				<button
-					class="navbar-toggler ml-auto"
-					type="button"
-					data-toggle="collapse"
-					data-target="#nucampNavbar"
-				>
+				<a href="index.html" class="navbar-brand"><img src="img/logo.png" height="30px" width="30px" alt="logo" /></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="nucampNavbar">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a href="index.html" class="nav-link"
-								><i class="fa fa-home fa-lg"></i> Home</a
-							>
+							<a href="index.html" class="nav-link"><i class="fa fa-home fa-lg"></i> Home</a>
 						</li>
 						<li class="nav-item">
-							<a href="aboutus.html" class="nav-link active"
-								><i class="fa fa-info fa-lg"></i> About</a
-							>
+							<a href="aboutus.html" class="nav-link active"><i class="fa fa-info fa-lg"></i> About</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link"
-								><i class="fa fa-list fa-lg"></i> Sites</a
-							>
+							<a href="#" class="nav-link"><i class="fa fa-list fa-lg"></i> Sites</a>
 						</li>
 						<li class="nav-item">
-							<a href="contactus.html" class="nav-link"
-								><i class="fa fa-address-card fa-lg"></i> Contact</a
-							>
+							<a href="contactus.html" class="nav-link"><i class="fa fa-address-card fa-lg"></i> Contact</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
+		<!-- -------------- -->
+		<!-- MAIN CONTAINER -->
+		<!-- -------------- -->
 		<div class="container">
+			<!-- BREADCRUMBS -->
 			<div class="row">
 				<div class="col">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-						<li class="breadcrumb-item">About</li>
+						<li class="breadcrumb-item active">About</li>
 					</ol>
 					<h2>About Us</h2>
 					<hr />
 				</div>
 			</div>
 
+			<!-- OUR MISSION -->
 			<div class="row row-content">
 				<div class="col col-sm-6">
 					<h3>Our Mission</h3>
 					<p>
-						We present a curated database of the best campsites in the vast
-						woods and backcountry of the World Wide Web Wilderness. We increase
-						access to adventure for the public while promoting safe and
-						respectful use of resources. The expert wilderness trekkers on our
-						staff personally verify each campsite to make sure that they are up
-						to our standards. We also present a platform for campers to share
-						reviews on campsites they have visited with each other.
+						We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe
+						and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for
+						campers to share reviews on campsites they have visited with each other.
 					</p>
 				</div>
 			</div>
 
+			<!-- COMMUNITY PARTNERS TABS -->
 			<div class="row row-content">
 				<div class="col">
 					<h3>Community Partners</h3>
-					<h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
-					<p class="d-none d-sm-block">
-						Bootstrap Outfitters supplies you with the gear you need at prices
-						you can't beat.
-					</p>
-					<h4>
-						Git Out Expeditions <small>Group Adventure Expeditions</small>
-					</h4>
-					<p class="d-none d-sm-block">
-						Join Git Out Expeditions to explore new horizons with a group of
-						other adventurers!
-					</p>
-					<h4>
-						Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small>
-					</h4>
-					<p class="d-none d-sm-block">
-						Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by
-						Mongo Fly Shop.
-					</p>
-					<h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
-					<p class="d-none d-sm-block">
-						From polar fleeces to swimsuits, hiking boots to waders, a visit to
-						Node will be sure to get you covered.
-					</p>
+					<ul class="nav nav-tabs">
+						<li class="nav-item"><a href="#bootstrap" role="tab" data-toggle="tab" class="nav-link active">Bootstrap Outfitters</a></li>
+						<li class="nav-item"><a href="#git" role="tab" data-toggle="tab" class="nav-link">Git Out Expeditions</a></li>
+						<li class="nav-item"><a href="#mongo" role="tab" data-toggle="tab" class="nav-link">Mongo Fly Shop</a></li>
+						<li class="nav-item"><a href="#node" role="tab" data-toggle="tab" class="nav-link">Node Outdoor Apparel</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="bootstrap">
+							<h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
+							<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+						</div>
+						<div class="tab-pane fade" id="git">
+							<h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
+							<p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
+						</div>
+						<div class="tab-pane fade" id="mongo">
+							<h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
+							<p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
+						</div>
+						<div class="tab-pane fade" id="node">
+							<h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
+							<p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<!-- END OF MAIN CONTAINER -->
 		</div>
 
+		<!-- -------- -->
+		<!--  FOOTER  -->
+		<!-- -------- -->
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -163,41 +145,20 @@
 					</div>
 					<div class="col-6 col-sm-5 text-center">
 						<h5>Social</h5>
-						<a
-							class="btn btn-social-icon btn-instagram"
-							href="http://instagram.com/"
-							><i class="fa fa-instagram"></i
-						></a>
-						<a
-							class="btn btn-social-icon btn-facebook"
-							href="http://facebook.com/"
-							><i class="fa fa-facebook"></i
-						></a>
-						<a
-							class="btn btn-social-icon btn-twitter"
-							href="http://twitter.com/"
-							><i class="fa fa-twitter"></i
-						></a>
-						<a class="btn btn-social-icon btn-google" href="http://youtube.com/"
-							><i class="fa fa-youtube"></i
-						></a>
+						<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+						<a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+						<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+						<a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
 					</div>
 					<div class="col-sm-4 text-center">
-						<a role="button" href="tel:2065551234" class="btn btn-link"
-							><i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a
-						><br />
-						<a
-							role="button"
-							href="mailto:campsites@nucamp.co"
-							class="btn btn-link"
-							><i class="fa fa-envelope-o fa-lg text-primary"></i>
-							campsites@nucamp.co</a
-						>
+						<a role="button" href="tel:2065551234" class="btn btn-link"><i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a><br />
+						<a role="button" href="mailto:campsites@nucamp.co" class="btn btn-link"><i class="fa fa-envelope-o fa-lg text-primary"></i> campsites@nucamp.co</a>
 					</div>
 				</div>
 			</div>
 		</footer>
 
+		<!-- SCRIPTS -->
 		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
