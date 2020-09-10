@@ -7,11 +7,10 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
 		<!-- Additional CSS -->
-		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
 		<!-- Google Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
@@ -39,7 +38,9 @@
 						<h2>a better way to camp</h2>
 					</div>
 					<div class="col-12 col-md-4 col-xl-2 d-flex align-items-center">
-						<a href="#reserveForm" class="btn btn-lg btn-info mx-auto">Reserve Campsite</a>
+						<a href="#reserveForm" class="btn btn-lg btn-info mx-auto" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br/><strong>1-206-555-1234</strong>"
+							>Reserve Campsite</a
+						>
 					</div>
 				</div>
 			</div>
@@ -203,5 +204,10 @@
 		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script>
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
 	</body>
 </html>
