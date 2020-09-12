@@ -67,21 +67,3 @@ footer {
 /* --------------- */
 /* Utility Classes */
 /* --------------- */
-
-.myCoolestColerEver {
-	background-color: rgba(57, 57, 180, 0.589);
-}
-
-.centerChildContent {
-	display: flex;
-	align-content: center;
-	align-items: center;
-}
-
-.smallRow {
-	padding: 200px;
-}
-
-.largeRow {
-	padding: 500px;
-}
