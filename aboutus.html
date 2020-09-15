@@ -20,11 +20,9 @@
 	</head>
 
 	<body>
-		<!-- ------------------- -->
-		<!-- MAIN HEADER SECTION -->
-		<!-- ------------------- -->
-
+		<!-- --------- -->
 		<!-- JUMBOTRON -->
+		<!-- --------- -->
 		<header class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<div class="row">
@@ -39,10 +37,12 @@
 			</div>
 		</header>
 
-		<!-- NAVIGATION -->
+		<!-- ----------- -->
+		<!-- MAIN NAVBAR -->
+		<!-- ----------- -->
 		<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
 			<div class="container">
-				<a href="index.html" class="navbar-brand"><img src="img/logo.png" height="30px" width="30px" alt="logo" /></a>
+				<a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="logo" height="30px" width="30px" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -67,6 +67,68 @@
 				</div>
 			</div>
 		</nav>
+
+		<!-- ----------------- -->
+		<!-- RESERVATION MODAL -->
+		<!-- ----------------- -->
+		<div class="modal fade" id="reserveModal" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-info text-white">
+						<h3>Reserve A Campsite</h3>
+						<button class="close" type="button" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<form id="reserveForm">
+							<!-- NUMBER OF CAMPERS INPUT -->
+							<div class="row form-group">
+								<label class="col-12 col-sm-6 col-form-label" for="numCampers">Number Of Campers</label>
+								<div class="col">
+									<select class="form-control" name="numCampers" id="numCampers">
+										<option>Select</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+									</select>
+								</div>
+							</div>
+
+							<!-- DATE INPUT -->
+							<div class="row form-group">
+								<label class="col-12 col-sm-6 col-form-label" for="date">Date</label>
+								<div class="col">
+									<input class="form-control" type="date" name="date" id="date" placeholder="mm/dd/yyyy" />
+								</div>
+							</div>
+
+							<!-- CAMPSITE TYPE INPUT -->
+							<div class="row form-group">
+								<label class="col-12 col-sm-6 col-form-label" for="siteTent">Campsite Type</label>
+								<div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+									<label class="btn btn-success active"> <input type="radio" name="options" id="siteTent" autocomplete="off" checked />Tent</label>
+									<label class="btn btn-primary"> <input type="radio" name="options" id="siteRv" autocomplete="off" />RV</label>
+								</div>
+							</div>
+
+							<!-- FORM BUTTONS -->
+							<div class="row form-group">
+								<div class="col">
+									<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+									<button class="btn btn-primary" type="submit">Search</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- -----------  -->
+		<!-- Login Modal  -->
+		<!-- -----------  -->
 
 		<div class="modal fade" id="loginModal" role="dialog">
 			<div class="modal-dialog" role="document">
