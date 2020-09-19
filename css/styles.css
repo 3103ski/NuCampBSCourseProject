@@ -49,3 +49,11 @@ footer {
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 20px; }
+
+#loginModal .modal-header {
+  background-color: #901cad;
+  color: white; }
+
+#reserveModal .modal-header {
+  background-color: #17a2b8;
+  color: white; }
